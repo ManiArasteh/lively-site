@@ -1,0 +1,60 @@
+{
+  "name": "lively-site",
+  "displayName": "Lively Site",
+  "description": "VS Code extension with a built-in HTTP server",
+  "version": "0.0.1",
+  "publisher": "ManiArasteh",
+  "repository": {"https://github.com/ManiArasteh/lively-site"},
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.lively-site.runServer",
+        "title": "Run Server using Lively Site"
+      },
+      {
+        "command": "extension.lively-site.stopServer",
+        "title": "Stop Server from Lively Site"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "webpack --mode production",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@socket.io/component-emitter": "^3.1.2",
+    "@types/browser-sync": "^2.29.0",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.92.0",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "buffer": "^6.0.3",
+    "bufferutil": "^4.0.8",
+    "chokidar": "^3.6.0",
+    "ignore-loader": "^0.1.2",
+    "path-browserify": "^1.0.1",
+    "stream-http": "^3.2.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "url": "^0.11.4",
+    "utf-8-validate": "^6.0.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "open": "^10.1.0"
+  }
+}
