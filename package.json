@@ -4,12 +4,13 @@
   "description": "VS Code extension with a built-in HTTP server",
   "version": "0.0.1",
   "publisher": "ManiArasteh",
+  "icon": "images/logo.png",
   "repository": "https://github.com/ManiArasteh/lively-site",
   "engines": {
     "vscode": "^1.92.0"
   },
   "categories": [
-    "Other"
+    "Testing"
   ],
   "main": "./dist/extension.js",
   "contributes": {
